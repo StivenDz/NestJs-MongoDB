@@ -3,7 +3,7 @@ import { Document } from "mongoose";
 
 
 @Schema()
-export class Art extends Document{
+export class Reminder extends Document{
 
     @Prop({
         unique:true,
@@ -11,23 +11,14 @@ export class Art extends Document{
     })
 
     @Prop()
-    name: string;
+    fullName: string;
 
     @Prop()
-    description: string;
-
-    @Prop()
-    price: number;
-
-    @Prop()
-    stock: number;
-
-    @Prop()
-    imageUrl: string;
+    phoneNumber: string;
 
     @Prop({type:Date,default:Date.now})
     createAt: string;
 
 }
 
-export const ArtSchema = SchemaFactory.createForClass( Art );
+export const ReminderSchema = SchemaFactory.createForClass( Reminder );

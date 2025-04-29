@@ -1,1 +1,0 @@
-export const URI = "mongodb+srv://root:cG9h9wpnkg5Md0s8-{ROOT}@emilyartstudio.kk06s.mongodb.net/?retryWrites=true&w=majority&appName=EmilyArtStudio";
